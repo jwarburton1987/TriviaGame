@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div class="container-fluid content">
+        <div class="row">
+            <div class="col-md-8">
+                <div>
+                    <h1>Ice Hockey Stanley Cup Trivia</h1>
+                </div>
+                <div>You have <span id="time">05:00</span> minutes!</div>
+
+                <button id="start">start</button>
+                <div id="scoreDisplay">score goes here: </div>
+
+                <div class="container" id="question1">
+
+                    <div class="row box qnbox">
+
+                        <div class="col-sm-12">
+                            <div class="qntxtbox">
+                                <b>
+                                    <span style="color:green;">1.</span> Who was the Detroit Red Wings captain in thier last stanley cup victory?</b>
+                            </div>
+                            <br>
+                            <div class="anslist">
+
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q1" value="Nichlaus Lidstrom" type="radio" onclick="answerSelected(this);">Nicklaus Lidstrom </div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q1" value="Pavel Datsyuk" type="radio" onclick="answerSelected(this);"> Pavel Datsyuk</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q1" value="Kris Draper" type="radio" onclick="answerSelected(this);"> Kris Draper</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q1" value="Henrik Zetterberg" type="radio" onclick="answerSelected(this);"> Henrik Zetterberg</div>
+                                <br>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="container" id="question2">
+
+                    <div class="row box qnbox">
+
+                        <div class="col-sm-12">
+                            <div class="qntxtbox">
+                                <b>
+                                    <span style="color:green;">2.</span> In the 2008-2009 hockey season who was the capatain for the penguins when they won?</b>
+                            </div>
+                            <br>
+                            <div class="anslist">
+
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q2" value="Evgeni Malkin" type="radio" onclick="answerSelected(this);"> Evgeni Malkin</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q2" value="Brooks Orpik" type="radio" onclick="answerSelected(this);"> Brooks Orpik</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q2" value="Sidney Crosby" type="radio" onclick="answerSelected(this);"> Sidney Crosby</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q2" value="Rob Scuderi" type="radio" onclick="answerSelected(this);"> Rob Scuderi</div>
+                                <br>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="container" id="question3">
+
+                    <div class="row box qnbox">
+
+                        <div class="col-sm-12">
+                            <div class="qntxtbox">
+                                <b>
+                                    <span style="color:green;">3.</span> In the 2009-2010 NHL season who was the captain for the Black Hawks?</b>
+                            </div>
+                            <br>
+                            <div class="anslist">
+
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q3" value="Duncan Keith" type="radio" onclick="answerSelected(this);"> Duncan Keith</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q3" value="Jonathon Toews" type="radio" onclick="answerSelected(this);"> Jonathon Toews</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q3" value="Joel Queenneville" type="radio" onclick="answerSelected(this);"> Joel Queenneville</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q3" value="Patrick Kane" type="radio" onclick="answerSelected(this);"> Patrick Kane</div>
+                                <br>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="container" id="question4">
+
+                    <div class="row box qnbox">
+
+                        <div class="col-sm-12">
+                            <div class="qntxtbox">
+                                <b>
+                                    <span style="color:green;">4.</span> Who was the captain of the winning team for the 2010-2011 Stanley cup?</b>
+                            </div>
+                            <br>
+                            <div class="anslist">
+
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q4" value="Frank Brimsek" type="radio" onclick="answerSelected(this);"> Zdeno Chara</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q4" value="Tony Esposito" type="radio" onclick="answerSelected(this);"> Claude Julien</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q4" value="Jacques Plante" type="radio" onclick="answerSelected(this);"> Alain Vigneault</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q4" value="Terry Sawchuk" type="radio" onclick="answerSelected(this);"> Patrice Bergeron</div>
+                                <br>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="container" id="question5">
+
+                    <div class="row box qnbox">
+
+                        <div class="col-sm-12">
+                            <div class="qntxtbox">
+                                <b>
+                                    <span style="color:green;">5.</span>Who was the captain of the winning team for the 2011-2012 Stanley cup? </b>
+                            </div>
+                            <br>
+                            <div class="anslist">
+
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q5" value="Forum" type="radio" onclick="answerSelected(this);"> Dustin Brown</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q5" value="Staples Center" type="radio" onclick="answerSelected(this);"> Matt Greene</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q5" value="Memorial Arena" type="radio" onclick="answerSelected(this);"> Anze Kopitar</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q5" value="UCLA" type="radio" onclick="answerSelected(this);"> Kyle Clifford</div>
+                                <br>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="container" id="question6">
+
+                    <div class="row box qnbox">
+
+                        <div class="col-sm-12">
+                            <div class="qntxtbox">
+                                <b>
+                                    <span style="color:green;">6.</span> Who was the captain of the winning team for the 2012-2013 Stanley cup? </b>
+                            </div>
+                            <br>
+                            <div class="anslist">
+
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q6" value="Dave Semenko" type="radio" onclick="answerSelected(this);"> Patrick Kane</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q6" value="Lee Folingo" type="radio" onclick="answerSelected(this);"> Jonathon Toews</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q6" value="Al Hamilton" type="radio" onclick="answerSelected(this);"> Duncan Keith</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q6" value="Wayne Gretzky" type="radio" onclick="answerSelected(this);"> Patrick Sharp</div>
+                                <br>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="container" id="question7">
+
+                    <div class="row box qnbox">
+
+                        <div class="col-sm-12">
+                            <div class="qntxtbox">
+                                <b>
+                                    <span style="color:green;">7.</span> Who was the captain of the winning team for the 2013-2014 Stanley cup? </b>
+                            </div>
+                            <br>
+                            <div class="anslist">
+
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q7" value="Keith and Darryl" type="radio" onclick="answerSelected(this);"> Mike Richards</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q7" value="Brian and Ron" type="radio" onclick="answerSelected(this);"> Anze Kopitar</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q7" value="Duane and Rich" type="radio" onclick="answerSelected(this);"> Matt Greene</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q7" value="Ron and Rich" type="radio" onclick="answerSelected(this);"> Dustin Brown</div>
+                                <br>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="container" id="question8">
+
+                    <div class="row box qnbox">
+
+                        <div class="col-sm-12">
+                            <div class="qntxtbox">
+                                <b>
+                                    <span style="color:green;">8.</span> Who was the captain of the winning team for the 2014-2015 Stanley cup?</b>
+                            </div>
+                            <br>
+                            <div class="anslist">
+
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q8" value="None" type="radio" onclick="answerSelected(this);"> Jonathon Toews</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q8" value="Walter" type="radio" onclick="answerSelected(this);"> Duncan Keith</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q8" value="Brent" type="radio" onclick="answerSelected(this);"> Patrick Sharp</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q8" value="Keith" type="radio" onclick="answerSelected(this);"> Patrick Kane</div>
+                                <br>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="container" id="question9">
+
+                    <div class="row box qnbox">
+
+                        <div class="col-sm-12">
+                            <div class="qntxtbox">
+                                <b>
+                                    <span style="color:green;">9.</span> Who was the captain of the winning team for the 2015-2016 Stanley cup?</b>
+                            </div>
+                            <br>
+                            <div class="anslist">
+
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q9" value="Alain Lemieux" type="radio" onclick="answerSelected(this);"> Marc-Andre Fleury</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q9" value="Jocelyn Lemieux" type="radio" onclick="answerSelected(this);"> Evgeni Malkin</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q9" value="Claude Lemieux" type="radio" onclick="answerSelected(this);"> Sidney Crosby</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q9" value="Ron Lemieux" type="radio" onclick="answerSelected(this);"> Chris Kunitz</div>
+                                <br>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="container" id="question10">
+
+                    <div class="row box qnbox">
+
+                        <div class="col-sm-12">
+                            <div class="qntxtbox">
+                                <b>
+                                    <span style="color:green;">10.</span> Who was the captain of the winning team for the 2017/2018 Stanley cup?</b>
+                            </div>
+                            <br>
+                            <div class="anslist">
+
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q10" value="Joe Sakic" type="radio" onclick="answerSelected(this);"> Alex Ovechkin</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q10" value="Russ Courtnall" type="radio" onclick="answerSelected(this);"> Nicklas Backstrom</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q10" value="Brent Sutter" type="radio" onclick="answerSelected(this);"> Braden Holtby</div>
+
+                                <div style="margin-bottom:2px;" onmouseover="answerOver(this);" onmouseout="answerOut(this);" onclick="selectAnswer(this);">
+                                    <input name="q10" value="Keith Primeau" type="radio" onclick="answerSelected(this);"> Brooks Orpik</div>
+                                <br>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button id="finished">Finished</button>
+
+
+
+
+
+
+            <!-- Script -->
+            <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
